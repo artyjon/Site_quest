@@ -1,0 +1,14 @@
+<h2>Заводчанин: Акт 1. Начало</h2>
+<img src="images/plant_worker.png" alt="хтонь" />
+<p>Итак, 2 пальца в рот…..”Боже……никогда больше, никогда больше не буду столько пить”.
+    Из Ростислава вышла вся таблица Менделеева, прямо под сиденье напротив. Благо автобус был пуст,
+    а шум торохтящего двигателя ПАЗика приглушил звуки этого безобразия. Ростислав пулей вылетел из
+    автобуса, пока запах его деяний не донесся брейфом до водителя.</p>
+<div class="button-container">
+    <form action="plant_worker" method="get">
+        <input type="hidden" name="stage" value="3">
+        <input type="hidden" name="questName" value="${param.questName}" />
+        <button type="submit">Пойти домой</button>
+    </form>
+</div>
+<br>

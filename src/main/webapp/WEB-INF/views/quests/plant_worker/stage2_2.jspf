@@ -1,0 +1,14 @@
+<h2>Заводчанин: Акт 1. Начало</h2>
+<img src="images/plant_worker.png" alt="хтонь" />
+<p>«Лучше выйду за 2 остановки и не буду блевать в автобусе» - подумал Ростислав.
+    «Останови-ка вон там, мне в магазин надо ещё заскочить.».
+    Скрип тормозов, открылись двери, и холодный ветер спасительно ударил в лицо, рвотные позывы прошли,
+    на лбу выступил пот - алкоголь начал выходить из крови.</p>
+<div class="button-container">
+    <form action="plant_worker" method="get">
+        <input type="hidden" name="stage" value="3">
+        <input type="hidden" name="questName" value="${param.questName}" />
+        <button type="submit">Пойти домой</button>
+    </form>
+</div>
+<br>

@@ -1,0 +1,14 @@
+<br>
+<h1 style="color: red">Вы проиграли...</h1>
+<img src="images/loselose.jpg" alt="хтонь" />
+<h2 style="color: black">
+    От сильного удара Ростислав вылетел через лобовое окно в 3 метрах от столкновения,
+    от полученных травм скончался на месте. Вас запомнят как безымянного думера,
+    который, так и не добился ничего в этой жизни...</h2>
+<div class="button-container">
+    <form action="plant_worker" method="get">
+        <input type="hidden" name="stage" value="0">
+        <input type="hidden" name="questName" value="${param.questName}" />
+        <button type="submit">Начать заново</button>
+    </form>
+</div>

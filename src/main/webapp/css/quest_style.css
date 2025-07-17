@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto; /* Центрируем весь контент по горизонтали */
+}
+
+h2 {
+    margin-top: 70px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    color: #3c5a7a;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin-top: 20px;
+    float: right;
+    margin-left: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+button {
+    font-size: 1.1em;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #3c5a7a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2a4860;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+    img {
+        margin: 20px 0;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1em;
+        padding: 12px;
+    }
+}

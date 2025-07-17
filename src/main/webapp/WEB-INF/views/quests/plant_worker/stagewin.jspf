@@ -1,0 +1,41 @@
+<br>
+<h1 style="color: #249603">Поздравляем!</h1>
+<img src="images/happy_end.jpeg" alt="хтонь"/>
+<style>
+    .quest-button {
+        background-color: #4b0082;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        margin-top: -1px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(75, 0, 130, 0.4);
+        transition: all 0.3s ease;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        margin-top: 20px;
+        float: right;
+        margin-left: 20px;
+    }
+</style>
+<h3 style="color: rgba(36,83,155,0.91)"><br>
+    Эпилог квеста «Заводчанин».<br><br>
+    Как позже оказалось, Глаша узнав куда делся Ростислав из города не стала даже ему звонить, а перевелась на его новый
+    завод на более высокую должность и гнала на всех парах в Коптёрск. <br><br>
+    Вы, наверное, ждали неожиданный конец, где всё будет плохо, не будет «хэппи- энда». Не дождётесь. Глаша и Ростислав
+    поженились и у них было пятеро детей, большой дом у холма и весёлая, большая, глупая собака.</h3>
+<div class="button-container">
+    <form action="plant_worker" method="get">
+        <input type="hidden" name="stage" value="0">
+        <input type="hidden" name="questName" value="${param.questName}"/>
+        <button type="submit">Начать заново?</button>
+    </form>
+    <form action="${pageContext.request.contextPath}/home" method="get">
+        <button type="submit" class="quest-button">К квестам</button>
+    </form>
+</div>

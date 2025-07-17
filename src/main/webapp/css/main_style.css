@@ -1,0 +1,108 @@
+@media (max-width: 576px) {
+    .navbar .navbar-nav .nav-item.dropdown .dropdown-toggle {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+
+/* Настройка выпадающего меню */
+.dropdown-menu {
+    animation: fadeIn 0.3s; /* Плавная анимация появления */
+    min-width: 200px; /* Минимальная ширина выпадающего меню */
+}
+
+/* Плавная анимация */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Сдвигаем вверх при появлении */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* В исходное положение */
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    margin: 40px auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.quests-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.quest-card {
+    width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.quest-card:hover {
+    transform: scale(1.05);
+}
+
+.quest-image {
+    width: 100%;
+    height: 300px; /* Увеличиваем высоту для более вытянутого вида */
+    object-fit: cover;
+}
+
+.quest-button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quest-button:hover {
+    background-color: #0056b3;
+}
+
+.quest-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.quest-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
